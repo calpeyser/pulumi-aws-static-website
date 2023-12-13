@@ -456,7 +456,7 @@ export class Website extends pulumi.ComponentResource {
 
         const bucketOrigin: aws.types.input.cloudfront.DistributionOrigin = {
             originId: this.bucket.arn,
-            domainName: this.bucket.bucketRegionalDomainName,
+            domainName: this.bucket.bucketWebsiteDomainName,
             customOriginConfig: {
                 originProtocolPolicy: "http-only",
                 httpPort: 80,

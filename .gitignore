@@ -1,5 +1,4 @@
 .pulumi
-**/bin/
 **/obj/
 **/node_modules/
 vendor/
